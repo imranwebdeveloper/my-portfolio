@@ -28,7 +28,6 @@ const SideBarToggle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid ${({ theme }) => theme.borderColor.primary};
   &:hover {
     background-color: ${({ theme }) => theme.hoverBg.primary};
   }

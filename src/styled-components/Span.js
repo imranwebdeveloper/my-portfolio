@@ -10,8 +10,19 @@ const ArrSpan = styled.span`
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  color: ${({ theme }) => theme.iconColor.primary};
+  color: ${({ theme }) => theme.textColor.primary};
   transition: 0.3s all ease-in-out;
+`;
+
+export const GlobalSpan = styled.span`
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: ${({ theme }) => theme.textColor.highlight};
+  transition: 0.3s all ease-in-out;
+  padding: 9px;
 `;
 
 export default ArrSpan;

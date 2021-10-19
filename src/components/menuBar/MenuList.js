@@ -1,6 +1,5 @@
-import React from "react";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import menuListItems from "../../data/menuListData";
 
@@ -10,18 +9,19 @@ function MenuList() {
     <MenuSection className="menu-list">
       <ul>
         {menuListItems.map((listItem, index) => {
+          const { link, name, icon, className } = listItem;
           return (
             <li key={index}>
-              <Link
-                to={listItem.link}
-                className={listItem.className}
+              <NavLink
+                exact
+                to={`/${link}`}
+                className={className}
                 style={{ justifyContent: !itemNameHide && "center" }}
+                activeClassName="active"
               >
-                <span className="menu-icon">{listItem.icon}</span>
-                {itemNameHide && (
-                  <span className="menu-name">{listItem.name}</span>
-                )}
-              </Link>
+                <span className="menu-icon">{icon}</span>
+                {itemNameHide && <span className="menu-name">{name}</span>}
+              </NavLink>
             </li>
           );
         })}
@@ -50,11 +50,11 @@ const MenuSection = styled.div`
         height: 100%;
         display: flex;
         align-items: center;
-        color: ${({ theme }) => theme.textColor.primary};
+        color: ${({ theme }) => theme.textColor.secondary};
+
         &:hover {
           color: ${({ theme }) => theme.hoverTextColor.primary};
         }
-
         .menu-icon {
           font-size: 1.5rem;
           height: 100%;
@@ -68,6 +68,9 @@ const MenuSection = styled.div`
           display: flex;
           align-items: center;
         }
+      }
+      .active {
+        color: ${({ theme }) => theme.textColor.highlight};
       }
       &:hover {
         background-color: ${({ theme }) => theme.hoverBg.primary};

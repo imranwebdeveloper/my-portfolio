@@ -18,7 +18,6 @@ const Profile = () => {
 const AvatarSection = styled.section`
   width: 100%;
   padding: 15px 2%;
-  border-bottom: 1px solid ${({ theme }) => theme.borderColor.primary};
   display: flex;
   justify-content: space-around;
   align-items: center;

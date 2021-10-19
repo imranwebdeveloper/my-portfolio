@@ -1,7 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;1,300;1,400&display=swap'); */
 
 *,
 ::after,
@@ -18,6 +19,7 @@ body {
   line-height: 1.2;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
   @media(max-width:768px){
   font-size: 0.8rem;
   }
@@ -36,9 +38,10 @@ a {
   text-decoration: none;
   height: 100%;
   width: 100%;
+  color: inherit;
 }
 ul {
-  list-style-type: none;
+  /* list-style-type: none; */
 }
 `;
 export default GlobalStyle;
