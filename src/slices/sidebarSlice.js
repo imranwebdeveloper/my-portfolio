@@ -2,20 +2,21 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   toggle: false,
+  mobileToggle: false,
 };
 
 export const sidebarSlice = createSlice({
   name: "sidebarToggle",
   initialState,
   reducers: {
-    hide: (state) => {
-      state.toggle = false;
+    toggle: (state) => {
+      state.toggle = !state.toggle;
     },
-    show: (state) => {
-      state.toggle = true;
+    mobileToggle: (state) => {
+      state.mobileToggle = !state.mobileToggle;
     },
   },
 });
 
-export const { hide, show } = sidebarSlice.actions;
+export const { toggle, mobileToggle } = sidebarSlice.actions;
 export default sidebarSlice.reducer;

@@ -16,7 +16,6 @@ const Profile = () => {
 };
 
 const AvatarSection = styled.section`
-  width: 100%;
   padding: 15px 2%;
   display: flex;
   justify-content: space-around;

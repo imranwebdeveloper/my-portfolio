@@ -51,7 +51,7 @@ const ProjectDetails = () => {
             </TagWrapper>
             <TagWrapper>
               <FlexSB>
-                <LiveLink align href="https://github.com">
+                <LiveLink href="https://github.com">
                   Source Code: <User>https://github.com </User>
                 </LiveLink>
                 <LiveLink href="https://github.com">
@@ -91,8 +91,9 @@ const TagWrapper = styled.div`
 `;
 
 const LiveLink = styled.a`
-  text-align: ${({ align }) => (align ? "start" : "end")};
+  /* text-align: ${({ align }) => (align ? "start" : "end")}; */
   padding: 2px 0;
+  border: 1px solid red;
 `;
 const OrderList = styled.ul`
   padding-left: 1rem;

@@ -11,7 +11,7 @@ import ProjectDetails from "../../pages/ProjectDetails";
 const MainSection = () => {
   const toggle = useSelector((state) => state.sidebar.toggle);
   return (
-    <Section marginLeft={toggle ? "280px" : "70px"}>
+    <Section marginLeft={toggle ? "200px" : "70px"}>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />
@@ -30,5 +30,9 @@ const Section = styled.div`
   margin-left: ${(props) => props.marginLeft};
   background: ${({ theme }) => theme.backgroundColor.primary};
   color: ${({ theme }) => theme.textColor.primary};
+  @media (max-width: 800px) {
+    width: 100%;
+    margin: 0;
+  }
 `;
 export default MainSection;
