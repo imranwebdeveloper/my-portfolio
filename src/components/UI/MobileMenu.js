@@ -15,10 +15,6 @@ const MobileMenu = () => {
   const itemNameHide = useSelector((state) => state.sidebar.mobileToggle);
   const dispatch = useDispatch();
 
-  const closeHandler = () => {
-    dispatch(mobileToggle());
-  };
-
   return (
     <>
       {itemNameHide && (

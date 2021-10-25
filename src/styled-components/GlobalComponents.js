@@ -20,6 +20,7 @@ export const Section = styled.div`
 export const AboutSectionH1 = styled.h1`
   margin-bottom: 3rem;
   color: ${({ theme }) => theme.textColor.secondary};
+  font-family: "Raleway", sans-serif;
 `;
 
 export const FlexWrapper = styled.div`
