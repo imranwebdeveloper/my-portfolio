@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Heading1 = styled.p`
   font-size: ${({ m }) => (m ? "2.4rem" : "3rem")};
-  font-weight: 500;
+  font-weight: bold;
   line-height: 1.2;
   color: ${({ theme }) => theme.textColor.secondary};
   margin-bottom: ${({ mb }) => mb && "0.8rem"};

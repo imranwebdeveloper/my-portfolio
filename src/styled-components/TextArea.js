@@ -8,7 +8,7 @@ export const TextArea = styled.textarea`
   height: 100px;
   color: inherit;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: inherit;
 
   background: rgb(28, 40, 73);
 `;

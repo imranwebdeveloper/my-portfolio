@@ -91,9 +91,7 @@ const TagWrapper = styled.div`
 `;
 
 const LiveLink = styled.a`
-  /* text-align: ${({ align }) => (align ? "start" : "end")}; */
   padding: 2px 0;
-  border: 1px solid red;
 `;
 const OrderList = styled.ul`
   padding-left: 1rem;

@@ -99,7 +99,7 @@ const SocialLink = styled.section`
   flex: 1;
   padding: 0 1rem;
   ul {
-    padding: 2rem;
+    padding: 1rem;
     li {
       margin-bottom: 5px;
       a {

@@ -6,7 +6,10 @@ import styled from "styled-components";
 import menuListItems from "../../data/menuListData";
 import { mobileToggle } from "../../slices/sidebarSlice";
 import { Nav, NavList } from "../../styled-components/NavElement";
+import { AvatarSection, ProfileImg } from "../menuBar/Profile";
 import OverlayModal from "./Overlay";
+import img from "../../images/webDeveloper.jpg";
+import ProfileInfo from "../menuBar/ProfileInfo";
 
 const MobileMenu = () => {
   const itemNameHide = useSelector((state) => state.sidebar.mobileToggle);
@@ -28,7 +31,10 @@ const MobileMenu = () => {
             <CloseNavbar onClick={() => dispatch(mobileToggle())}>
               <AiOutlineClose />
             </CloseNavbar>
-            <header>header</header>
+            <AvatarSection>
+              <ProfileImg src={img} />
+              <ProfileInfo />
+            </AvatarSection>
             <Nav>
               {menuListItems.map((listItem, index) => {
                 const { link, name, icon, className } = listItem;

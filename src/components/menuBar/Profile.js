@@ -10,22 +10,26 @@ const Profile = () => {
   return (
     <AvatarSection>
       <ProfileImg src={img} />
-      {toggle && <ProfileInfo />}
+      <ProfileContainer>{toggle && <ProfileInfo />}</ProfileContainer>
     </AvatarSection>
   );
 };
 
-const AvatarSection = styled.section`
-  padding: 15px 2%;
+export const AvatarSection = styled.section`
+  padding: 1rem 2%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 `;
 
-const ProfileImg = styled.img`
+export const ProfileImg = styled.img`
   width: 50px;
   height: 50px;
   border-radius: 50%;
 `;
-
+const ProfileContainer = styled.div`
+  @media (max-width: 799px) {
+    display: none;
+  }
+`;
 export default Profile;

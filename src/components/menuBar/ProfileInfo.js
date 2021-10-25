@@ -19,9 +19,6 @@ const Header = styled.header`
     font-size: 0.75rem;
     color: ${({ theme }) => theme.textColor.primary};
   }
-  @media (max-width: 800px) {
-    display: none;
-  }
 `;
 
 export default ProfileInfo;

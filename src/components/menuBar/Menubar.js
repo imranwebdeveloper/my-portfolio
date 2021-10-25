@@ -9,6 +9,7 @@ const Menubar = () => {
   return (
     <Navbar width={toggle ? "200px" : "70px"}>
       <Profile />
+
       <MenuSection>
         <MenuList />
       </MenuSection>
@@ -42,4 +43,5 @@ const MenuSection = styled.div`
     display: none;
   }
 `;
+
 export default Menubar;
