@@ -6,6 +6,7 @@ export const Heading1 = styled.p`
   line-height: 1.2;
   color: ${({ theme }) => theme.textColor.secondary};
   margin-bottom: ${({ mb }) => mb && "0.8rem"};
+  font-family: "Raleway", sans-serif;
   @media (max-width: 800px) {
     font-size: 2rem;
   }
