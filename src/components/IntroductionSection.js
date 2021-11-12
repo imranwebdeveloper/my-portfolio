@@ -32,18 +32,21 @@ const ContentWrapper = styled.section`
   justify-content: space-between;
   border-radius: 5px;
   box-shadow: 0px 0px 5px -2px black;
-
   @media (max-width: 800px) {
     flex-direction: column-reverse;
+    box-shadow: none;
   }
 `;
 const Content = styled.div`
-  padding: 1rem;
+  padding: 2rem;
+  @media (max-width: 800px) {
+    padding: 0.5rem;
+    margin: 1rem 0;
+  }
   p {
-    padding: 0 1rem 0.5rem 1rem;
-
+    padding-bottom: 1rem;
     span {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       color: ${({ theme }) => theme.textColor.highlight};
       margin-right: 0.5rem;
       font-weight: 600;
@@ -57,12 +60,11 @@ const ContentPhotos = styled.div`
   align-items: center;
   img {
     width: 100%;
-    height: 100%;
     display: block;
     border-radius: 0 5px 5px 0;
     @media (max-width: 800px) {
-      width: 70%;
-      padding-top: 3rem;
+      width: 60%;
+      padding-top: 1rem;
     }
   }
 `;

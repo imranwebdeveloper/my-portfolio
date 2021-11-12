@@ -10,7 +10,7 @@ const GlobalHeader = ({ heading, subHeading }) => {
       <Section>
         <FlexColJC>
           <Heading1>{heading}</Heading1>
-          <HeadingH3>{subHeading}</HeadingH3>
+          {subHeading && <HeadingH3>{subHeading}</HeadingH3>}
         </FlexColJC>
       </Section>
     </HeaderSection>

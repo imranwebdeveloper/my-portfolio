@@ -8,7 +8,7 @@ export const Heading1 = styled.p`
   margin-bottom: ${({ mb }) => mb && "0.8rem"};
   font-family: "Raleway", sans-serif;
   @media (max-width: 800px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 `;
 export const Heading5 = styled.p`

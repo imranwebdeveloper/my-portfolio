@@ -73,6 +73,9 @@ const TimelineContent = styled.article`
   header {
     color: ${({ theme }) => theme.textColor.secondary};
     font: 600 1.33em / 1.2 "Raleway", Helvetica, Arial, sans-serif;
+    @media (max-width: 800px) {
+      font-size: 1rem;
+    }
   }
   ul {
     padding: 1rem 1rem 2rem 1rem;

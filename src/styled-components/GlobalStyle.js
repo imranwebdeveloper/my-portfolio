@@ -16,16 +16,13 @@ body {
   line-height: 1.2;
  font-family: 'Lato', sans-serif;
   @media(max-width:800px){
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   } 
 }
 p{
-  font-size:1.1rem;
   line-height: 1.5;
   font-weight: 300;
-  @media(max-width:768px){
-  font-size:.9rem;
-  }
+ 
   
 }
 a {

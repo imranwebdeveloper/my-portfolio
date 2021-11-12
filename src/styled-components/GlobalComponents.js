@@ -10,10 +10,10 @@ export const FlexSection = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
 `;
 export const Section = styled.div`
-  width: 90%;
+  width: 95%;
+  height: 100%;
   margin: 0 auto;
   padding: 1.5rem 0;
 `;
@@ -21,10 +21,13 @@ export const AboutSectionH1 = styled.h1`
   margin-bottom: 3rem;
   color: ${({ theme }) => theme.textColor.secondary};
   font-family: "Raleway", sans-serif;
+  @media (max-width: 800px) {
+    text-align: center;
+  }
 `;
 
 export const FlexWrapper = styled.div`
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;

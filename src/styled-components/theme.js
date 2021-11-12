@@ -1,11 +1,3 @@
-export const light = {
-  background: "white",
-  color: "#2b2839",
-  border: "#eee",
-  hoverBg: "#eee",
-  svgColor: "green",
-};
-
 export const DarkNavy = {
   textColor: {
     primary: "rgba(255, 255, 255, 0.8)",

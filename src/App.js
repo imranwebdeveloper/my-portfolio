@@ -1,4 +1,3 @@
-// import './App.css';
 import MainSection from "./components/mainSection/MainSection";
 import Menubar from "./components/menuBar/Menubar";
 import { BrowserRouter as Router } from "react-router-dom";

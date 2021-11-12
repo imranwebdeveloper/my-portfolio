@@ -78,8 +78,11 @@ const Button = styled.button`
 
 const ProjectSection = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-auto-rows: auto;
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
 `;
 
 export default Project;
